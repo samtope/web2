@@ -11,6 +11,9 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,18 +61,8 @@
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="#team" class="nav-item nav-link">Our Team</a>
                         <a href="project.html" class="nav-item nav-link">Projects</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu bg-light mt-2">
-                                <a href="feature.html" class="dropdown-item">Features</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="faq.html" class="dropdown-item">FAQs</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
@@ -94,7 +87,7 @@
                     <a href="https://paystack.com/pay/c8c0uvt7ju" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Donate</a>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end display-6">
-                    <img class="img-fluid" src="img/wat2.png" alt="">
+                    <img class="img-fluid" src="img/logo.png" alt="">
                 </div>
             </div>
         </div>
@@ -132,25 +125,64 @@
             <div class="row g-4">
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                     <div class="case-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/project-1.jpg" alt="">
-                        <a class="case-overlay text-decoration-none" href="">
+                        <img class="img-fluid" src="img/project-3.jpg" alt="">
+                        <a class="case-overlay text-decoration-none">
                             <small>Stockholm Junior Water Prize Nigeria</small>
-                            <h6 class="lh-base text-white mb-3">SESACO organizes the annual Stockholm Junior Water Prize in Nigeria with 
+                            <h6 class="lh-base text-white mb-3 ">SESACO organizes the annual Stockholm Junior Water Prize in Nigeria with 
                                 support from The Embassy of Sweden Abuja Nigeria and other stakeholders. 
+                                This is aimed to inspire and empower young individuals to 
+                                contribute innovative solutions to water-related issues. It encourages a deep understanding of water sustainability.
                             </h6>
-                            <div class="btn btn-light btn-sm border rounded-pill text-primary px-3 mb-3">Apply now</div>
-                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                <h5 class="text-white">APPLY</h5>
+                              </button>
                         </a>
                     </div>
+                     
+                    
                 </div>
+
+                
+<!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                            Modal body..
+                            </div>
+                    
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                    
+                        </div>
+                        </div>
+                    </div>
+
+                
+
+
+
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                     <div class="case-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/project-2.jpg" alt="">
                         <a class="case-overlay text-decoration-none" href="">
                             <small>School Conservation/ Science Clubs</small>
-                            <h5 class="lh-base text-white mb-3">SESACO is supporting school science and conservation clubs 
-                                by providing training and for them. 
-                            </h5>
+                            <h6 class="lh-base text-white mb-3">SESACO is supporting school science and conservation clubs 
+                                by providing training and for them.Participation in conservation or science clubs offers students 
+                                opportunities to learn from experts in the field, 
+                                engage in discussions, and collaborate on projects. This enhances their critical thinking, 
+                                problem-solving, and teamwork skills. 
+                            </h6>
                             <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
                         </a>
                     </div>
@@ -160,8 +192,12 @@
                         <img class="img-fluid" src="img/project-3.jpg" alt="">
                         <a class="case-overlay text-decoration-none" href="">
                             <small>Biodiversity and Climate Change</small>
-                            <h5 class="lh-base text-white mb-3">We conduct research to assess the status of biodiversity 
-                            </h5>
+                            <h6 class="lh-base text-white mb-3">We conduct research to assess the status of biodiversity. 
+                                Biodiversity provides essential ecosystem services that are crucial for human well-being, 
+                                such as pollination, soil fertility, water purification, and carbon storage. Climate change can 
+                                jeopardize these services by disrupting ecological balance and reducing the resilience of ecosystems to 
+                                environmental stressors.
+                            </h6>
                             <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
                         </a>
                     </div>
@@ -189,6 +225,9 @@
                     projects, and work with other relevant organizations to ensure the protection of the 
                     environment. We also conduct community conservation education and sustainable livelihood 
                     programs, and establish conservation science clubs in schools.
+                    <br>
+                    <br>
+                    Project one -   || Project two -
                     </p>
                     <div class="row g-4 pt-3">
                         <div class="col-sm-6">
@@ -268,13 +307,13 @@
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Do you only create HTML websites?
+                                    How can individuals contribute to environmental sustainability?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionFAQ1">
                                 <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                    Individuals can contribute by adopting eco-friendly practices such as reducing waste, conserving water and energy, using sustainable transportation, supporting renewable energy sources, and making environmentally conscious consumer choices.
                                 </div>
                             </div>
                         </div>
@@ -282,13 +321,13 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    Will my website be mobile-friendly?
+                                    What role does renewable energy play in environmental sustainability?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionFAQ1">
                                 <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                    Renewable energy sources such as solar, wind, hydroelectric, and geothermal power play a vital role in reducing reliance on fossil fuels and mitigating climate change. They offer cleaner and more sustainable alternatives for energy production.    
                                 </div>
                             </div>
                         </div>
@@ -314,13 +353,13 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    I’m on a strict budget. Do you have any low cost options?
+                                    How does climate change affect environmental sustainability?
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionFAQ2">
                                 <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                    Climate change, driven by greenhouse gas emissions from human activities, poses significant threats to environmental sustainability. It leads to rising temperatures, extreme weather events, sea-level rise, habitat loss, and disruptions to ecosystems.    
                                 </div>
                             </div>
                         </div>
@@ -328,13 +367,13 @@
                             <h2 class="accordion-header" id="headingSeven">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    Will you maintain my site for me?
+                                    What threats do frogs face in terms of environmental sustainability?
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                 data-bs-parent="#accordionFAQ2">
                                 <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                    Frogs face threats such as habitat loss, pollution (including pesticides and chemicals), climate change, disease (e.g., chytrid fungus), invasive species, and overexploitation for the pet trade or food.    
                                 </div>
                             </div>
                         </div>
@@ -342,13 +381,13 @@
                             <h2 class="accordion-header" id="headingEight">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    I’m on a strict budget. Do you have any low cost options?
+                                    How can habitat loss affect frog populations?
                                 </button>
                             </h2>
                             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
                                 data-bs-parent="#accordionFAQ2">
                                 <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                    Habitat loss, including deforestation, urbanization, and wetland destruction, can fragment frog habitats, limit breeding sites, and disrupt migration patterns, leading to declines in frog populations.    
                                 </div>
                             </div>
                         </div>
@@ -359,16 +398,21 @@
     </div>
    
     <!-- Team Start -->
-    <div class="container-fluid bg-light py-5">
+    <div class="container-fluid bg-light py-5" id = "team">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>
                     <h1 class="mb-4">Meet Our Experienced Team Members</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                    <p class="mb-4">At SESACO, we take pride in our experienced team members who
+                        bring a wealth of expertise and knowledge to every project. Our 
+                        team is composed of seasoned professionals with diverse 
+                        backgrounds and skill sets, united by a passion for innovation 
+                        and excellence. <br>
+                        Together, our team embodies the core values of SESACO, driving innovation, fostering 
+                        collaboration, and delivering exceptional value. We are committed to pushing boundaries, 
+                        embracing challenges, and shaping a brighter future.
+                    </p>
                 </div>
                 <div class="col-lg-7">
                     <div class="row g-4">
@@ -377,16 +421,16 @@
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                                     <div class="team-item bg-white text-center rounded p-4 pt-0">
                                         <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
-                                        <h5 class="mb-0">Boris Johnson</h5>
-                                        <small>Founder & CEO</small>
+                                        <h5 class="mb-0">Godwin Chinemerem</h5>
+                                        <small>Executive Director</small>
                                         <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                            <a class="btn btn-square btn-primary m-1" ><i
                                                     class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                            <a class="btn btn-square btn-primary m-1" ><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                            <a class="btn btn-square btn-primary m-1" ><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                            <a class="btn btn-square btn-primary m-1" ><i
                                                     class="fab fa-linkedin-in"></i></a>
                                         </div>
                                     </div>
@@ -399,16 +443,16 @@
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="team-item bg-white text-center rounded p-4 pt-0">
                                         <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
-                                        <h5 class="mb-0">Kate Winslet</h5>
-                                        <small>Co Founder</small>
+                                        <h5 class="mb-0">Valentine Iwebunankiti</h5>
+                                        <small>Executive Secretary</small>
                                         <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                            <a class="btn btn-square btn-primary m-1" ><i
                                                     class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                            <a class="btn btn-square btn-primary m-1"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                            <a class="btn btn-square btn-primary m-1"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                            <a class="btn btn-square btn-primary m-1"><i
                                                     class="fab fa-linkedin-in"></i></a>
                                         </div>
                                     </div>
@@ -457,6 +501,12 @@
                     
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                  
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <h5 class="text-white mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Emmanuel Ofili Drive, Ibusa Delta State </p>
                     <p><i class="fa fa-phone-alt me-3"></i>+234 806 711 9584</p>
@@ -468,22 +518,6 @@
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Career</a>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Robotic Automation</a>
-                    <a class="btn btn-link" href="">Machine learning</a>
-                    <a class="btn btn-link" href="">Predictive Analysis</a>
-                    <a class="btn btn-link" href="">Data Science</a>
-                    <a class="btn btn-link" href="">Robot Technology</a>
                 </div>
             </div>
         </div>
@@ -498,10 +532,7 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FAQs</a>
+                           
                         </div>
                     </div>
                 </div>
